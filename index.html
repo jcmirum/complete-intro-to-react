@@ -8,5 +8,19 @@
 </head>
 <body>
     <div id="app"></div>
+    <script type="text/javascript" src="node_modules/react/dist/react.js"></script>
+    <script type="text/javascript" src="node_modules/react-dom/dist/react-dom.js"></script>
+    <script type='text/babel'>
+        const div = React.DOM.div
+        const h1 = React.DOM.h1
+
+        const MyFirstComponent = (
+            <div>(null,
+                h1(null, 'This is my first component!')
+                )
+            )
+        ReactDOM.render(MyFirstComponent, document.getElementById('app'))
+    </script>
+    <script src='js/ClientApp.js'></script>
 </body>
 </html>
